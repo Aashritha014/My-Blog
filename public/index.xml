@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Aashritha&#39;s Blog 🍯</title>
+    <link>https://Aashirtha.org/</link>
+    <description>Recent content on Aashritha&#39;s Blog 🍯</description>
+    <generator>Hugo -- 0.139.2</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Oct 2024 00:54:41 +0530</lastBuildDate>
+    <atom:link href="https://Aashirtha.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me 🧸</title>
+      <link>https://Aashirtha.org/posts/first/</link>
+      <pubDate>Wed, 30 Oct 2024 00:54:41 +0530</pubDate>
+      <guid>https://Aashirtha.org/posts/first/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Aashritha a CS undergrad who&amp;rsquo;s mostly intrested in computers and super fast cars(tu tu tu du 🦁).&lt;/p&gt;
+&lt;p&gt;This blog is my little corner of the internet where I can talk about all the stuff that gets me excited—whether it’s breaking down complex computer science concepts or getting into the high-speed world of Formula 1.&lt;/p&gt;
+&lt;p&gt;Honestly, my goal? Just to yap about the things I love. I’m here to share my thoughts and hopefully spark some fun conversations. I don’t have any grand plans to change the world (though, who knows?), I just want to geek out and maybe get you as excited about these things as I am. If you’re into the same stuff, mail me! If not, I hope at least I can entertain you with my yap session.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basics of NLP</title>
+      <link>https://Aashirtha.org/posts/second/</link>
+      <pubDate>Wed, 30 Oct 2024 00:54:41 +0530</pubDate>
+      <guid>https://Aashirtha.org/posts/second/</guid>
+      <description>&lt;p&gt;You must have used ChatGPT, but how does it work? How does Google Translate work? They all work under the study of &lt;strong&gt;&lt;code&gt;Natural Language Processing.&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Natural Language Processing (NLP) is a field of artificial intelligence focused on enabling machines to understand, interpret, and generate human language. It combines computational linguistics, machine learning, and deep learning to bridge the gap between human communication and computer understanding.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Book Review📚</title>
+      <link>https://Aashirtha.org/posts/third/</link>
+      <pubDate>Wed, 30 Oct 2024 00:54:41 +0530</pubDate>
+      <guid>https://Aashirtha.org/posts/third/</guid>
+      <description>&lt;h3 id=&#34;before-the-coffee-gets-cold---by-toshikazu-kawaguchi&#34;&gt;&lt;em&gt;Before the Coffee Gets Cold ☕️&lt;/em&gt;   by Toshikazu Kawaguchi&lt;/h3&gt;
+&lt;p&gt;Toshikazu Kawaguchi&amp;rsquo;s &lt;em&gt;Before the Coffee Gets Cold&lt;/em&gt; is a tender, introspective novel that offers a unique twist on the concept of time travel. Set in a cozy, almost magical café in Tokyo, this book weaves together heartwarming and bittersweet stories of love, regret, and the complexities of human relationships.&lt;/p&gt;
+&lt;p&gt;The novel centers on Funiculi Funicula, a small café that allows its patrons to travel back in time—but with strict and peculiar rules. For instance, the traveler can only meet someone who has visited the café, and they must return to the present before their coffee gets cold. These limitations, rather than being frustrating, add a poignant layer to the narrative, emphasizing the importance of living in the moment and cherishing the time we have.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Aashritha&#39;s Blog 🖨️</title>
+<meta name="keywords" content="">
+<meta name="description" content="You must have used ChatGPT, but how does it work? How does Google Translate work? They all work under the study of Natural Language Processing.
+
+Natural Language Processing (NLP) is a field of artificial intelligence focused on enabling machines to understand, interpret, and generate human language. It combines computational linguistics, machine learning, and deep learning to bridge the gap between human communication and computer understanding.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/posts/basics-of-nlp-14c17bf3de1e80a5bbeaf3a79696a82d/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d6fcd20a4fb86efa4dfac8ec95da60244cc8871042183da1ef28e3a762ad79c8.css" integrity="sha256-1vzSCk&#43;4bvpN&#43;sjsldpgJEzIhxBCGD2h7yjjp2Ktecg=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/basics-of-nlp-14c17bf3de1e80a5bbeaf3a79696a82d/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Aashritha&#39;s Blog 🖨️ (Alt + H)">Aashritha&#39;s Blog 🖨️</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><p>You must have used ChatGPT, but how does it work? How does Google Translate work? They all work under the study of <strong><code>Natural Language Processing.</code></strong></p>
+<!-- raw HTML omitted -->
+<p>Natural Language Processing (NLP) is a field of artificial intelligence focused on enabling machines to understand, interpret, and generate human language. It combines computational linguistics, machine learning, and deep learning to bridge the gap between human communication and computer understanding.</p>
+<!-- raw HTML omitted -->
+<hr>
+<p>This blog has four parts</p>
+<ul>
+<li><strong><code>Text Preprocessing</code></strong> - Lowercasing, Tokenisation, Stop-word Removal, Stemming, Lemmatization</li>
+<li><strong><code>Regex</code></strong> - Basics and some examples</li>
+<li><strong><code>Frequencies</code></strong> - BoW, TF, IDF, TF-IDF</li>
+<li><strong><code>Word Embeddings</code></strong> - Word2Vec, GloVe</li>
+</ul>
+<hr>
+<h1 id="text-preprocessing"><code>Text Preprocessing</code><a hidden class="anchor" aria-hidden="true" href="#text-preprocessing">#</a></h1>
+<p>We will be using the NLTK library for this task, make sure import it earlier on using <code>import nltk</code></p>
+<h2 id="lowercasing"><code>Lowercasing</code><a hidden class="anchor" aria-hidden="true" href="#lowercasing">#</a></h2>
+<p>This step is obvious, we do this to ensure consistency. It also reduces the complexity of the text data we are going to input. We can simply just convert every character in the test data to its lower case form.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>text<span style="color:#f92672">=</span><span style="color:#75715e">#your input data</span>
+</span></span><span style="display:flex;"><span>text<span style="color:#f92672">=</span>text<span style="color:#f92672">.</span>lower()
+</span></span></code></pre></div><h2 id="tokenization"><code>Tokenization</code><a hidden class="anchor" aria-hidden="true" href="#tokenization">#</a></h2>
+<p>Imagine you want to teach your kid to study English, instead of teaching him Shakespeare, you will first teach him alphabets, then words then sentences.</p>
+<p>Here your child is the machine, and we break down sentences for it to learn so that the sentence is broken into meaningful tokens, which still carry the original essence of context. This makes pattern recognition easier.</p>
+<p>Let’s say we have a sentence <code>I am stuipd</code>. We can break it down to <code>[&quot;I&quot;,&quot;am&quot;,&quot;stupid&quot;]</code> . This is word tokenization, which breaks long sentences into individual words.</p>
+<p>Now let’s go down one step further. [&lsquo;I&rsquo;, &rsquo; &lsquo;, &lsquo;a&rsquo;, &rsquo;m&rsquo;, &rsquo; &lsquo;,&rsquo;s&rsquo;, &rsquo;t&rsquo;, &lsquo;u&rsquo;, &lsquo;p&rsquo;, &lsquo;i&rsquo;, &rsquo;d&rsquo;] . This kind of tokenization is called character tokenization, mostly used for spelling correction tasks.
+We can also break words neuralnets to [&ldquo;neural&rdquo;,&ldquo;nets&rdquo;].This kind of tokenization is termed as subword tokenization. This is useful for languages that form meaning by combining smaller tokens.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> nltk
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.tokenize <span style="color:#f92672">import</span> word_tokenize
+</span></span><span style="display:flex;"><span>nltk<span style="color:#f92672">.</span>download(<span style="color:#e6db74">&#39;punkt&#39;</span>)
+</span></span><span style="display:flex;"><span>tokens <span style="color:#f92672">=</span> word_tokenize(<span style="color:#e6db74">&#34;I am neuralnets.&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Tokens:&#34;</span>, tokens)
+</span></span></code></pre></div><h2 id="stop-word-removal"><strong><code>Stop-word Removal</code></strong><a hidden class="anchor" aria-hidden="true" href="#stop-word-removal">#</a></h2>
+<p>What is a stop-word? They are usually the words that don’t contribute any meaning or context to the sentence. For example, the word <em>the</em> doesn’t bring out any significance to the sentence, hence we can just remove it from the input data. But words which have important context to the sentence, like for example, <em>history</em>  can’t be termed as stop-words.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.corpus <span style="color:#f92672">import</span> stopwords
+</span></span><span style="display:flex;"><span>stop_words<span style="color:#f92672">=</span>set(stopwords<span style="color:#f92672">.</span>words(<span style="color:#e6db74">&#39;english&#39;</span>) 
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#this forms a set of stop words</span>
+</span></span><span style="display:flex;"><span>words<span style="color:#f92672">=</span>[word <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> tokens <span style="color:#66d9ef">if</span> word <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> stop_words]
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#this stores all words in tokens, that are not stopwords</span>
+</span></span></code></pre></div><h2 id="stemming"><strong><code>Stemming</code></strong><a hidden class="anchor" aria-hidden="true" href="#stemming">#</a></h2>
+<p>Let us consider this sentence, The leaves are falling, have fallen, but will leave behind beauty</p>
+<p>With stemming, what we do is chop down the sentence into their root forms, which might not make any sense and lose the meaning of the word.</p>
+<p><img alt="https://trite-song-d6a.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcc95b4dc-10fa-4b10-a476-92cd53dd254d%2F6114946a-89bf-4cf7-bd26-748418ae0310%2Fimage.png?table=block&amp;id=1440af77-bef3-805f-8824-c87adf559760&amp;spaceId=cc95b4dc-10fa-4b10-a476-92cd53dd254d&amp;width=640&amp;userId=&amp;cache=v2" loading="lazy" src="https://trite-song-d6a.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcc95b4dc-10fa-4b10-a476-92cd53dd254d%2F6114946a-89bf-4cf7-bd26-748418ae0310%2Fimage.png?table=block&id=1440af77-bef3-805f-8824-c87adf559760&spaceId=cc95b4dc-10fa-4b10-a476-92cd53dd254d&width=640&userId=&cache=v2"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.stem <span style="color:#f92672">import</span> PorterStemmer
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.tokenize <span style="color:#f92672">import</span> word_tokeniz
+</span></span><span style="display:flex;"><span>text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;The leaves are falling, have fallen, but will leave behind beauty.&#34;</span>
+</span></span><span style="display:flex;"><span>words <span style="color:#f92672">=</span> word_tokenize(text)
+</span></span><span style="display:flex;"><span>stemmer <span style="color:#f92672">=</span> PorterStemmer()
+</span></span><span style="display:flex;"><span>stems <span style="color:#f92672">=</span> [stemmer<span style="color:#f92672">.</span>stem(word) <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words]
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Stemming Results:&#34;</span>, stems)
+</span></span></code></pre></div><h2 id="lemmatization"><strong><code>Lemmatization</code></strong><a hidden class="anchor" aria-hidden="true" href="#lemmatization">#</a></h2>
+<p>Consider the earlier sentence.
+What we do here, is we chop down the sentence into their base dictionary word, which considers the meaning and context of the word, hence not making a word, that makes no sense.</p>
+<p><img alt="https://trite-song-d6a.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcc95b4dc-10fa-4b10-a476-92cd53dd254d%2F1885e625-4d43-48db-a1eb-7f4cbd1abcdc%2Fimage.png?table=block&amp;id=1440af77-bef3-80b4-8dcc-cbccadc8726f&amp;spaceId=cc95b4dc-10fa-4b10-a476-92cd53dd254d&amp;width=600&amp;userId=&amp;cache=v2" loading="lazy" src="https://trite-song-d6a.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fcc95b4dc-10fa-4b10-a476-92cd53dd254d%2F1885e625-4d43-48db-a1eb-7f4cbd1abcdc%2Fimage.png?table=block&id=1440af77-bef3-80b4-8dcc-cbccadc8726f&spaceId=cc95b4dc-10fa-4b10-a476-92cd53dd254d&width=600&userId=&cache=v2"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.stem <span style="color:#f92672">import</span> WordNetLemmatizer
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> nltk.tokenize <span style="color:#f92672">import</span> word_tokenize
+</span></span><span style="display:flex;"><span>text <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;The leaves are falling, have fallen, but will leave behind beauty.&#34;</span>
+</span></span><span style="display:flex;"><span>words <span style="color:#f92672">=</span> word_tokenize(text)
+</span></span><span style="display:flex;"><span>stemmer <span style="color:#f92672">=</span> WordNetLemmatizer()
+</span></span><span style="display:flex;"><span>lemmas <span style="color:#f92672">=</span> [lemmatizer<span style="color:#f92672">.</span>lemmatize(word, pos<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;v&#34;</span>) <span style="color:#66d9ef">for</span> word <span style="color:#f92672">in</span> words])
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Lemmatization Results:&#34;</span>, lemmas)
+</span></span></code></pre></div><hr>
+<h1 id="regular-expressionsregex"><code>Regular Expressions(Regex)</code><a hidden class="anchor" aria-hidden="true" href="#regular-expressionsregex">#</a></h1>
+<p>A regular expression (shortened as regex) is a sequence of characters that specifies a search pattern in text. Basically it’s a way of finding and searching stuff in a string.</p>
+<h3 id="how-to-write-regex"><code>How to write Regex?</code><a hidden class="anchor" aria-hidden="true" href="#how-to-write-regex">#</a></h3>
+<p>→ First we import the regex module with <code>import re</code></p>
+<p>→ Then we need to create a regex object with <code>re.compile</code></p>
+<p>→ We need to pass our input string into the Regex object using <code>search()</code> , which returns an object</p>
+<p>→ Finally call the <code>group()</code> function to return a string output from the object.</p>
+<h3 id="common-regex-symbols"><code>Common Regex Symbols</code><a hidden class="anchor" aria-hidden="true" href="#common-regex-symbols">#</a></h3>
+<p><img alt="image.png" loading="lazy" src="Basics%20of%20NLP%2014c17bf3de1e80a5bbeaf3a79696a82d/image.png"></p>
+<h3 id="example"><code>Example</code><a hidden class="anchor" aria-hidden="true" href="#example">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>phone_num_regex <span style="color:#f92672">=</span> re<span style="color:#f92672">.</span>compile(<span style="color:#e6db74">r</span><span style="color:#e6db74">&#39;\d\d\d\d-\d\d\d\d\d\d&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mo <span style="color:#f92672">=</span> phone_num_regex<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#39;My number is 9834-872919.&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Phone number found: </span><span style="color:#e6db74">{</span>mo<span style="color:#f92672">.</span>group()<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#this will output the number in the string</span>
+</span></span></code></pre></div><p>Since this topic is very practical, and should be learnt through practice, you’re suggested to try examples out on your own to get the grasp of regex! Check out -</p>
+<p><a href="https://docs.python.org/3/howto/regex.html">https://docs.python.org/3/howto/regex.html</a></p>
+<hr>
+<h1 id="frequencies"><code>Frequencies</code><a hidden class="anchor" aria-hidden="true" href="#frequencies">#</a></h1>
+<h3 id="bag-of-wordsbow"><code>Bag of Words(BoW)</code><a hidden class="anchor" aria-hidden="true" href="#bag-of-wordsbow">#</a></h3>
+<p>It is nothing but a simple way to represent text data. We don’t care about the order of words not the grammar, we just care about what words appear in the sentence. It’s like putting words in a bag and then randomly counting each type of word.</p>
+<p>Firstly, we need to create a vocabulary, that is all the unique words in our dataset. Then we count how often each word occurs in the vocabulary.</p>
+<p>Let’s say we have sentences</p>
+<p>S1 : <code>I like pizza</code></p>
+<p>S2 : <code>I do not like pizza</code></p>
+<p>Our vocabulary will be [&ldquo;I&rdquo;, &ldquo;like&rdquo;, &ldquo;pizza&rdquo;, &ldquo;do&rdquo;, &ldquo;not&rdquo;]</p>
+<p>Now we count the number of appearances</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Word</strong></th>
+          <th><strong>Sentence 1</strong></th>
+          <th><strong>Sentence 2</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>I</strong></td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>Like</strong></td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>pizza</strong></td>
+          <td>1</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>do</strong></td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>not</strong></td>
+          <td>0</td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>Total Words</strong></td>
+          <td>3</td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<p>The BoW representation is :</p>
+<ol>
+<li>Sentence 1 : <code>[1,1,1,0,0]</code></li>
+<li>Sentence 2 : <code>[1,1,1,1,1]</code></li>
+</ol>
+<p>The BoW model represents each sentence as a vector, where each dimension is a word in the vocabulary and the value in it represents the count of that word.</p>
+<h3 id="term-frequencytf"><code>Term Frequency(TF)</code><a hidden class="anchor" aria-hidden="true" href="#term-frequencytf">#</a></h3>
+<p>It measures how often a specific word appears in a document, compared to the total number of words in that document. Instead of counting like in BoW, TF normalises the counts, thus for larger datasets, we can see how important a word is in context of the document. It sets the stage for more advanced models to come.</p>
+<p><em>The formula for TF is:</em></p>
+<p>$TF(w)=\frac{count \space of \space w \space in \space document}{Total\space number \space of \space words\space in \space document}$</p>
+<p>We will be using the same example like the last time.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Word</strong></th>
+          <th><strong>TF of Sentence 1</strong></th>
+          <th><strong>TF of Sentence 2</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>I</strong></td>
+          <td>1/3 = 0.333</td>
+          <td>1/5 = 0.2</td>
+      </tr>
+      <tr>
+          <td><strong>Like</strong></td>
+          <td>1/3 = 0.333</td>
+          <td>1/5 = 0.2</td>
+      </tr>
+      <tr>
+          <td><strong>pizza</strong></td>
+          <td>1/3 = 0.333</td>
+          <td>1/5 = 0.2</td>
+      </tr>
+      <tr>
+          <td><strong>do</strong></td>
+          <td>0</td>
+          <td>1/5 = 0.2</td>
+      </tr>
+      <tr>
+          <td><strong>not</strong></td>
+          <td>0</td>
+          <td>1/5 = 0.2</td>
+      </tr>
+      <tr>
+          <td><strong>Total Words</strong></td>
+          <td>3</td>
+          <td>5</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="inverse-document-frequencyidf"><code>Inverse Document Frequency(IDF)</code><a hidden class="anchor" aria-hidden="true" href="#inverse-document-frequencyidf">#</a></h3>
+<p>While TF told us about the importance of a word in a document, IDF tells us about how rare or unique a word is in the document. Using this, we can often eliminate words that carry very less context, rather than the rare words which might carry huge context. Words that appear in every document get a lower IDF (close to 0). Words that appear in fewer documents get a higher IDF.</p>
+<p><em>The formula for IDF  is :</em></p>
+<p>$IDF(w)=log(\frac{Total\space number \space of \space documents}{Number\space of \space documents\space having\space w})$</p>
+<p>We will be using the same example like the last time.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Word</strong></th>
+          <th><strong>Document Frequency</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>I</strong></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td><strong>like</strong></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td><strong>pizza</strong></td>
+          <td>2</td>
+      </tr>
+      <tr>
+          <td><strong>do</strong></td>
+          <td>1</td>
+      </tr>
+      <tr>
+          <td><strong>not</strong></td>
+          <td>1</td>
+      </tr>
+  </tbody>
+</table>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Word</strong></th>
+          <th><strong>Document Frequency</strong></th>
+          <th><strong>IDF</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>I</strong></td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>like</strong></td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>pizza</strong></td>
+          <td>2</td>
+          <td>0</td>
+      </tr>
+      <tr>
+          <td><strong>do</strong></td>
+          <td>1</td>
+          <td>0.693</td>
+      </tr>
+      <tr>
+          <td><strong>not</strong></td>
+          <td>1</td>
+          <td>0.693</td>
+      </tr>
+  </tbody>
+</table>
+<p><em>Now let’s calculate the IDFs :</em></p>
+<p>$log(\frac{2}{2})=0 \space |\space log(\frac{2}{1})=0.693$</p>
+<p>IDF helps downweight common words (like <em>&ldquo;I&rdquo;</em>) and emphasize rare words (like <em>&ldquo;do&rdquo;</em> and <em>&ldquo;not&rdquo;</em>), which are often more meaningful for distinguishing between documents.</p>
+<h3 id="tf-idf"><code>TF-IDF</code><a hidden class="anchor" aria-hidden="true" href="#tf-idf">#</a></h3>
+<p>TF tells us how important a word is in a document, IDF tells us how rare that word is. Combining them gives a score that tells us how important a word is in a document, while leaving behind common words.</p>
+<p><em>The formula is :</em></p>
+<p>$TF-IDF(w)=TF(w)\times IDF(w)$</p>
+<p>We will be using the same example like the last time.</p>
+<p>TF-IDF highlights that words like <em>&ldquo;do&rdquo;</em> and <em>&ldquo;not&rdquo;</em> are more important to Sentence 2 because they are rare in the dataset.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Word</strong></th>
+          <th><strong>TF-IDF in S1</strong></th>
+          <th><strong>TF-IDF in S2</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>I</strong></td>
+          <td>0.33 x 0 = 0</td>
+          <td>0.2 x 0 = 0</td>
+      </tr>
+      <tr>
+          <td><strong>like</strong></td>
+          <td>0.33 x 0 = 0</td>
+          <td>0.2 x 0 = 0</td>
+      </tr>
+      <tr>
+          <td><strong>pizza</strong></td>
+          <td>0.33 x 0 = 0</td>
+          <td>0.2 x 0 = 0</td>
+      </tr>
+      <tr>
+          <td><strong>do</strong></td>
+          <td>0 x 0.69 = 0</td>
+          <td>0.2 x 0.69 = 0.13</td>
+      </tr>
+      <tr>
+          <td><strong>not</strong></td>
+          <td>0 x 0.69 = 0</td>
+          <td>0.2 x 0.69 = 0.13</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h1 id="word-embedding"><code>Word Embedding</code><a hidden class="anchor" aria-hidden="true" href="#word-embedding">#</a></h1>
+<h2 id="introduction"><code>Introduction</code><a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Word embeddings involves representing words as numerical vectors in a continuous vector space. Here, each word is mapped to a vector of real numbers in a high-dimensional space.</p>
+<p>They help us to understand how words are related to each other, and hence we can solve questions like</p>
+<p>$King-Man+Woman\sim Queen$</p>
+<p>They capture the contextual meaning behind all the words, hence understanding a language in depth.</p>
+<h2 id="word2vec"><code>Word2Vec</code><a hidden class="anchor" aria-hidden="true" href="#word2vec">#</a></h2>
+<p><code>*Original Paper : https://arxiv.org/pdf/1301.3781*</code></p>
+<p>What word2vec works in such a way, that it causes words that tend to occur in same type of contexts, to have embedding values similar to each other.</p>
+<p>Let’s consider two sentences.</p>
+<p>S1 : <code>The child threw the ball across the park.</code></p>
+<p>S2 : <code>The kid threw the ball across the park.</code></p>
+<p>Here, due to word2vec, the words <code>child</code> and <code>kid</code> will have similar embedding vectors, as they have similar context in these sentences.</p>
+<ul>
+<li>
+<p>How does it work?</p>
+<p><img alt="image.png" loading="lazy" src="Basics%20of%20NLP%2014c17bf3de1e80a5bbeaf3a79696a82d/image%201.png"></p>
+</li>
+</ul>
+<p>This is how the Word2Vec model looks like, confusing at first right?
+Let’s decode its parts one by one.</p>
+<h3 id="cbowcontinuous-bag-of-words"><code>CBOW(Continuous Bag of Words)</code><a hidden class="anchor" aria-hidden="true" href="#cbowcontinuous-bag-of-words">#</a></h3>
+<p>Let’s define a vocabulary first</p>
+<p>Vocab : <code>What is life if not a rise to the top</code></p>
+<p>We create a One Hot Vector for each of the words.</p>
+<ul>
+<li>
+<p>What is One Hot Vector? (extra)</p>
+<p>One position is set to 1, and rest are kept as 0 in a vector Suppose we have three fruit categories: <strong>Apple</strong>, <strong>Banana</strong>, and <strong>Cherry</strong>. We can represent them as one-hot vectors like this:</p>
+<ul>
+<li><strong>Apple</strong>: [1, 0, 0]</li>
+<li><strong>Banana</strong>: [0, 1, 0]</li>
+<li><strong>Cherry</strong>: [0, 0, 1]</li>
+</ul>
+</li>
+</ul>
+<p>We need to define a context window now, let it be 3 words.</p>
+<p>What we aim to do in CBOW is, we will input the left and right words, which will try to predict the middle most word. In our case, let’s see What is life.</p>
+<p>We devise a neural network structure which inputs the two one-hot vectors and converts them to a 3x1 hidden layer, which gets converted into a 5x1 matrix to give the output of the <code>is</code> ,after we run it through the activation layer of <strong>Softmax</strong>. Weights are updated throughout all the context windows, <code>is life if</code>, then <code>life if not</code> and so on, and this how we work with CBOW!</p>
+<p><img alt="image.png" loading="lazy" src="Basics%20of%20NLP%2014c17bf3de1e80a5bbeaf3a79696a82d/image%202.png"></p>
+<h3 id="skipgram"><code>Skipgram</code><a hidden class="anchor" aria-hidden="true" href="#skipgram">#</a></h3>
+<p>Skipgram works exactly in the reverse manner of how CBOW works.</p>
+<p>Here we take the centre word and then try to predict the other words surrounding it using a neural network. (I will skip discussion as the process is similar)</p>
+<p><img alt="image.png" loading="lazy" src="Basics%20of%20NLP%2014c17bf3de1e80a5bbeaf3a79696a82d/image%203.png"></p>
+<h3 id="why-use-it"><code>Why use it?</code><a hidden class="anchor" aria-hidden="true" href="#why-use-it">#</a></h3>
+<ul>
+<li>It preserves the relationship between word.</li>
+<li>It also deals with new words, by assigning them new vectors.</li>
+</ul>
+<h2 id="glove"><code>GloVe</code><a hidden class="anchor" aria-hidden="true" href="#glove">#</a></h2>
+<p><code>*Original Paper : https://nlp.stanford.edu/pubs/glove.pdf*</code></p>
+<p>It is an unsupervised learning algorithm that is designed to learn word embeddings, by making statistical relations between words in a large corpus. It tries to find the co-occurrence patterns in a corpus</p>
+<p>Let us consider a set of sentences</p>
+<ol>
+<li>I enjoy flying.</li>
+<li>I like NLP.</li>
+<li>I like deep learning.</li>
+</ol>
+<p>From these sentences, let’s list the unique words: <code>[I, enjoy, flying, like, NLP, deep, learning]</code></p>
+<p>We need to fix a context window, here too like Word2Vec. Let’s make it 1. That means we will only check co-occurrence with the adjacent word, aka the word earlier and the word later</p>
+<p>Now we want to make a co-occurrence matrix X</p>
+<p><img alt="image.png" loading="lazy" src="Basics%20of%20NLP%2014c17bf3de1e80a5bbeaf3a79696a82d/image%204.png"></p>
+<p>Now let’s understand by taking an example.</p>
+<p>See the word <code>deep</code> , deep has the words <code>like</code> before it and <code>learning</code> after it. So logically deep should have only like and learning values set to 1. If you check that is the case horizontally as well as vertically</p>
+<blockquote>
+<p>This co-occurrence matrix comes out to be symmetric, if you notice. Can you think why is it the case? (Thought exercise for the reader)</p>
+</blockquote>
+<p>Any element in this matrix is denoted by $x_{ij}$ where it means how many times is i succeeded by j in the corpus.</p>
+<p>$x_i$  will denote each row, which is basically how many times i with being succeeded by each word in the corpus.</p>
+<p>$x_i=\sum_k{x_{ik}}{}$</p>
+<p>Hence, the probability comes out to be:</p>
+<p>$$
+\color{red} P_{ij}=P(\frac{w_j}{w_i})=\frac{x_{ij}}{x_i}
+$$</p>
+<hr>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Aashritha&#39;s Blog 🖨️</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

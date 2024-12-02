@@ -1,0 +1,18 @@
+baseURL:  "https://Aashirtha.org/"
+languageCode: en-us
+title: Aashritha's Blog 
+theme: PaperMod
+
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: About
+      url: /about/
+      weight: 2
+    - name: Blog
+      url: /blog/
+      weight: 3
+
+    
